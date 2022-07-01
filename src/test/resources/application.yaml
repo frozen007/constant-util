@@ -1,0 +1,14 @@
+database:
+  validationQuery: SELECT 1
+
+  username:
+  password:
+  url:
+  driverClassName: com.mysql.jdbc.Driver
+  initialSize: 0
+  maxTotal: 4
+  maxIdle: 4
+  minIdle: 0
+
+mybatis:
+  config-location: mybatis/mybatis.config.xml
