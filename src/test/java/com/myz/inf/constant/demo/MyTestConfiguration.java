@@ -22,7 +22,7 @@ import java.util.Properties;
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan
-@MapperScan({"com.myz.inf.constant.dao"})
+@MapperScan({"com.myz.inf.constant.dao","com.myz.inf.constant.demo.dao"})
 public class MyTestConfiguration {
 
     @Autowired
