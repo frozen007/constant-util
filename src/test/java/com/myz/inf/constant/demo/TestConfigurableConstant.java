@@ -5,6 +5,7 @@ import com.myz.inf.constant.ConfigurableConstantsManager;
 import com.myz.inf.constant.dao.ConstantConfigMapper;
 import com.myz.inf.constant.demo.dao.UserLogMapper;
 import com.myz.inf.constant.demo.domain.UserLog;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +51,7 @@ public class TestConfigurableConstant {
         configurableConstantsHelper.setConfigurableConstantsManager(configurableConstantsManager);
 
         PhoneTypeEnum iphone = ConfigurableConstantsHelper.getByCode(PhoneTypeEnum.class, "IPHONE");
-        System.out.println(iphone.desc());
+        Assert.assertEquals("IPHONE", iphone.code());
 
         List<UserLog> userLogs = userLogMapper.selectAllUserLog();
 
