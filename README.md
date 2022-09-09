@@ -19,7 +19,7 @@ public class PhoneTypeEnum extends BaseConfigurableConstant {
 ```
 
 - 在数据库中添加枚举值
-```
+```sql
 insert into constant_config (constant_name, constant_code, constant_value, constant_desc, create_time, create_by, last_modify_time, last_modify_by)
 values
 ('phone_type',  'IPHONE', 1, '苹果手机', now(), 'zhaomingyu', now(), 'zhaomingyu')
